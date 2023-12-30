@@ -38,7 +38,7 @@ export const appRouter=createBrowserRouter([
     element:<AppLayout/>,
     children:[
         {
-            path:'/',
+            path:'/tradeDemo',
             element:<Suspense fallback={<h1>Loading page...</h1>}><Hero/></Suspense>
         },
         {
