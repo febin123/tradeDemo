@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import useOnlineStatus from '../utilis/useOnlineStatus'
+
 const Awards = () => {
+
+  useEffect(()=>{
+    document.title="TradeZero | Awards"
+  },[])
+
   const onlineStatus=useOnlineStatus()
 
   if(onlineStatus=== false)

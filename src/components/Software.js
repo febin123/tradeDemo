@@ -1,6 +1,10 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import useOnlineStatus from '../utilis/useOnlineStatus'
 const Software = () => {
+
+  useEffect(()=>{
+    document.title="TradeZero | Software"
+  },[])
   const onlineStatus=useOnlineStatus()
 
   if(onlineStatus=== false)

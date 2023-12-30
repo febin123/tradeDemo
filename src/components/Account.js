@@ -1,6 +1,11 @@
+import { useEffect } from 'react'
 import React from 'react'
 import useOnlineStatus from '../utilis/useOnlineStatus'
 const Account = () => {
+
+  useEffect(()=>{
+    document.title="TradeZero | Account"
+  },[])
   const onlineStatus=useOnlineStatus()
 
   if(onlineStatus=== false)

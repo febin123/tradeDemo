@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Typed from 'react-typed';
 import useOnlineStatus from '../utilis/useOnlineStatus';
 function Hero() {
+  useEffect(()=>{
+    document.title="TradeZero | Home"
+  },[])
   const onlineStatus=useOnlineStatus()
 
   if(onlineStatus=== false)
